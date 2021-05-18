@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class TargetsLeft : MonoBehaviour
 {
-    public static int targetCount = 4;
+    public static int targetCount=5;
     public Text targetText;
     const bool end = false;
 
