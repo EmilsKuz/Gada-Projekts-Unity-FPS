@@ -6,7 +6,7 @@ public class GunScriptBalls : MonoBehaviour
 {
     public GameObject bulletPrefab;
     public Camera cam;
-    public Transform FirePoint;
+    public ParticleSystem muzzleFlash;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +17,7 @@ public class GunScriptBalls : MonoBehaviour
     void Update()
     {
         if (Input.GetButtonDown("Fire1")) {
+            muzzleFlash.Play();
             GameObject bulletObject = Instantiate(bulletPrefab);
             bulletObject.transform.position = cam.transform.position + cam.transform.forward;
             bulletObject.transform.forward = cam.transform.forward;
