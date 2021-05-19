@@ -28,4 +28,8 @@ public class MouseLook : MonoBehaviour
         player.Rotate(Vector3.up * mouseX);
 
     }
+    public void changeSensitivity(float _sensitivity)
+    {
+        mouseSensitivity = _sensitivity;
+    }
 }
