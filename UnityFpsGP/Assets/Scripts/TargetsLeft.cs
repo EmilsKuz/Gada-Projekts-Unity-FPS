@@ -17,9 +17,8 @@ public class TargetsLeft : MonoBehaviour
 
         if (targetCount < 1)
         {
-            //Debug.Log("You Win!!!");
             
-            Timer.gameGood = end;
+            Timer.Finnish();
         }
     }
 }
