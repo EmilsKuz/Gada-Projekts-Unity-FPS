@@ -11,5 +11,7 @@ public class Teleport : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         thePlayer.transform.position = teleportTarget.transform.position;
+        Timer.started = true;
+        Timer.startTime = Time.time;
     }
 }

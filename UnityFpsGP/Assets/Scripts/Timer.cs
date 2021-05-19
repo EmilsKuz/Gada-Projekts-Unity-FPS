@@ -9,8 +9,9 @@ public class Timer : MonoBehaviour
 
     public Text counterText;
     // Start is called before the first frame update
-    public float startTime;
+    public static float startTime;
     private static bool finnished=false;
+    public static bool started = false;
     
 
     void Start()
@@ -22,12 +23,12 @@ public class Timer : MonoBehaviour
     void Update()
     {
         if (finnished) return;
-        
-        float t = Time.time - startTime;
-        string seconds = (t % 60f).ToString("00");
-        string miliSeconds = ((t * 1000f) % 1000).ToString("00");
-        counterText.text = "Time: " + seconds + ":" + miliSeconds;
-        
+        if (started) { 
+            float t = Time.time - startTime;
+            string seconds = (t % 60f).ToString("00");
+            string miliSeconds = ((t * 1000f) % 1000).ToString("00");
+            counterText.text = "Time: " + seconds + ":" + miliSeconds;
+        }
     }
 
     public static void Finnish() 
