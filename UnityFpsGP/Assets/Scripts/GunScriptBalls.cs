@@ -14,7 +14,6 @@ public class GunScriptBalls : MonoBehaviour
     void Start()
     {
         shoot = GetComponent<AudioSource>();
-
     }
     
         // Update is called once per frame
