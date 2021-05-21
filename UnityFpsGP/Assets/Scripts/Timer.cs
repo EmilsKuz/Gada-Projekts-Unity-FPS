@@ -27,10 +27,10 @@ public class Timer : MonoBehaviour
         if (finnished) return;
         if (started) { 
             float t = Time.time - startTime;
-            string seconds = (t % 60f).ToString("00");
-            string miliSeconds = ((t * 1000f) % 1000).ToString("00");
-            counterText.text = "Time: " + seconds + ":" + miliSeconds;
-            currTime = seconds + ":" + miliSeconds;
+            string minutes = ((int)t / 60).ToString();
+            string seconds = (t % 60f).ToString("f2");
+            counterText.text = "Time: " + minutes + ":" + seconds;
+            currTime = minutes + ":" + seconds;
         }
     }
 
