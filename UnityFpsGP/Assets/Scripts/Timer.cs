@@ -8,15 +8,17 @@ public class Timer : MonoBehaviour
 {
 
     public Text counterText;
-    // Start is called before the first frame update
     public static float startTime;
     private static bool finnished=false;
     public static bool started = false;
+    public GameOver GameOver;
+    private static string currTime;
     
 
     void Start()
     {
         startTime = Time.time;
+        finnished = false;
     }
 
     // Update is called once per frame
@@ -28,11 +30,13 @@ public class Timer : MonoBehaviour
             string seconds = (t % 60f).ToString("00");
             string miliSeconds = ((t * 1000f) % 1000).ToString("00");
             counterText.text = "Time: " + seconds + ":" + miliSeconds;
+            currTime = seconds + ":" + miliSeconds;
         }
     }
 
-    public static void Finnish() 
+    public void Finnish() 
     {
         finnished = true;
+        GameOver.GOver(currTime);
     }
  }

@@ -8,7 +8,11 @@ public class TargetsLeft : MonoBehaviour
     public static int targetCount=5;
     public Text targetText;
     const bool end = false;
-
+    public Timer Timer;
+    private void Start()
+    {
+        targetCount = 5;
+    }
     // Update is called once per frame
     void Update()
     {
