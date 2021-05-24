@@ -17617,7 +17617,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 365971112071241134, guid: 6492f195a511a8441b4fd00f76cf6dc1, type: 3}
       propertyPath: m_Volume
-      value: 0.359
+      value: 0.194
       objectReference: {fileID: 0}
     - target: {fileID: 365971112446644674, guid: 6492f195a511a8441b4fd00f76cf6dc1, type: 3}
       propertyPath: m_Name
@@ -17671,7 +17671,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 365971112071241128, guid: 6492f195a511a8441b4fd00f76cf6dc1, type: 3}
+    - {fileID: 365971112071241129, guid: 6492f195a511a8441b4fd00f76cf6dc1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6492f195a511a8441b4fd00f76cf6dc1, type: 3}
 --- !u!114 &365971112020343988 stripped
 MonoBehaviour:

@@ -27,11 +27,13 @@ public class PauseScript : MonoBehaviour
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
+        AudioListener.volume = 1;
     }
     void Pause() {
         Cursor.lockState = CursorLockMode.None;
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+        AudioListener.volume = 0;
     }
 }
