@@ -9,7 +9,7 @@ public class Timer : MonoBehaviour
 
     public Text counterText;
     public static float startTime;
-    private static bool finnished=false;
+    private static bool finished=false;
     public static bool started = false;
     public GameOver GameOver;
     private static string currTime;
@@ -18,13 +18,13 @@ public class Timer : MonoBehaviour
     void Start()
     {
         startTime = Time.time;
-        finnished = false;
+        finished = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (finnished) return;
+        if (finished) return;
         if (started) { 
             float t = Time.time - startTime;
             string minutes = ((int)t / 60).ToString();
@@ -34,9 +34,9 @@ public class Timer : MonoBehaviour
         }
     }
 
-    public void Finnish() 
+    public void Finish() 
     {
-        finnished = true;
+        finished = true;
         GameOver.GOver(currTime);
     }
  }

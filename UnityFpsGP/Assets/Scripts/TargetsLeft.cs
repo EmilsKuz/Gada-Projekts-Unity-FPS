@@ -19,7 +19,7 @@ public class TargetsLeft : MonoBehaviour
 
         if (targetCount < 1)
         {
-            Timer.Finnish();
+            Timer.Finish();
         }
     }
 }
