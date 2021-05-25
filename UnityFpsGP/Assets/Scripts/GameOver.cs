@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
+    public Timer Timer;
     public Text timeText;
     public void GOver(string time)
     {
@@ -15,7 +16,9 @@ public class GameOver : MonoBehaviour
     }
 
     public void RestartButton() {
+        Timer.started = false;
         SceneManager.LoadScene("MainScene");
+
     }
     public void MainMenu() {
         SceneManager.LoadScene("MainMenu");

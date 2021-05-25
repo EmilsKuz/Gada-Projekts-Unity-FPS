@@ -6472,7 +6472,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 582427567}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0.76, y: 15.079187, z: -4.217}
+  m_LocalPosition: {x: 0.8, y: 15.079187, z: -4.217}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1028330091}
@@ -8168,15 +8168,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 799124097}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -146, y: 24, z: 287.92}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -154.56, y: 24.34, z: 287.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 141502084}
   - {fileID: 963194228}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &799124100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10806,7 +10806,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 938945544}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -6.68, y: 14.94, z: -4.09}
+  m_LocalPosition: {x: -6.68, y: 15.46, z: -4.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1028330091}
@@ -10821,7 +10821,8 @@ TextMesh:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 938945544}
   m_Text: "Controls: \nW - Move Forward\nS - Move Back\nA - Move Left\nD - Move RIght\nSpace
-    - Jump\nLeftMouseButton-Shoot\n+ For More Sensitivity\n- For Less Sensitivity"
+    - Jump\nLeftMouseButton-Shoot\n+ For More Sensitivity\n- For Less Sensitivity\nEscape
+    - Pause/Unpause"
   m_OffsetZ: 0
   m_CharacterSize: 0.4
   m_LineSpacing: 1
