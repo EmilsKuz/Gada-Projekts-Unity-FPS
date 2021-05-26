@@ -9,25 +9,31 @@ public class GunScriptBalls : MonoBehaviour
     public ParticleSystem muzzleFlash;
     public float fireRate = 0.25f;
     private float nextFire;
+    private bool shooting = false;
     AudioSource shoot;
 
     // Start is called before the first frame
     void Start()
     {
+        Invoke("canShoot", 3.0f);
         shoot = GetComponent<AudioSource>();
     }
     
         // Update is called once per frame
         void Update()
     {
-        if (Input.GetButtonDown("Fire1") && Time.time > nextFire && Time.deltaTime!=0 && Time.time>2) {
+        if (Input.GetButtonDown("Fire1") && Time.time > nextFire && Time.deltaTime!=0 && shooting) {
             nextFire = Time.time + fireRate;
             muzzleFlash.Play();
             GameObject bulletObject = Instantiate(bulletPrefab);
             bulletObject.transform.position = cam.transform.position + cam.transform.forward;
             bulletObject.transform.forward = cam.transform.forward;
             shoot.Play();
-            
         }
+    }
+
+    public void canShoot() {
+        
+        shooting = true;
     }
 }

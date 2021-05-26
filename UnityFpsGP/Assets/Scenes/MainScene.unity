@@ -8252,6 +8252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 714048c47c361fe49b70810ef93e2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Timer: {fileID: 0}
   timeText: {fileID: 2076314730}
 --- !u!114 &816764097
 MonoBehaviour:
@@ -17619,6 +17620,10 @@ PrefabInstance:
     - target: {fileID: 365971112071241134, guid: 6492f195a511a8441b4fd00f76cf6dc1, type: 3}
       propertyPath: m_Volume
       value: 0.194
+      objectReference: {fileID: 0}
+    - target: {fileID: 365971112071241134, guid: 6492f195a511a8441b4fd00f76cf6dc1, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 365971112446644674, guid: 6492f195a511a8441b4fd00f76cf6dc1, type: 3}
       propertyPath: m_Name
