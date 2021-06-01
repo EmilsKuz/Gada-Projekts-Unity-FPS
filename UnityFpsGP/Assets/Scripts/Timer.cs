@@ -6,14 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
-
     public Text counterText;
     public static float startTime;
     private static bool finished=false;
     public static bool started = false;
     public GameOver GameOver;
     private static string currTime;
-    
 
     void Start()
     {
@@ -21,7 +19,6 @@ public class Timer : MonoBehaviour
         finished = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (finished) return;

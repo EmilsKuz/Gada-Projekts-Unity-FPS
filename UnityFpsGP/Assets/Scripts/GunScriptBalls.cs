@@ -12,14 +12,12 @@ public class GunScriptBalls : MonoBehaviour
     private bool shooting = false;
     AudioSource shoot;
 
-    // Start is called before the first frame
     void Start()
     {
         Invoke("canShoot", 3.0f);
         shoot = GetComponent<AudioSource>();
     }
     
-        // Update is called once per frame
         void Update()
     {
         if (Input.GetButtonDown("Fire1") && Time.time > nextFire && Time.deltaTime!=0 && shooting) {

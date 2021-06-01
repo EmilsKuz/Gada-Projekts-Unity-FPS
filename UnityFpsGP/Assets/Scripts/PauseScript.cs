@@ -13,13 +13,11 @@ public class PauseScript : MonoBehaviour
         {
             if (GameIsPaused)
             {
-
                 Resume();
             }
             else {
                 Pause();
             }
-        
         }
     }
     public void Resume() {

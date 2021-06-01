@@ -25,12 +25,10 @@ public class BulletScript : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    // Start is called before the first frame update
     void Start()
     {
         lifeTimer = lifeDuration;
     }
-    // Update is called once per frame
     void Update()
     {
         transform.position += transform.forward * speed * Time.deltaTime;
