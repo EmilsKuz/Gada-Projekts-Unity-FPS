@@ -34,4 +34,9 @@ public class PauseScript : MonoBehaviour
         GameIsPaused = true;
         AudioListener.volume = 0;
     }
+    public void QuitGame()
+    {
+
+        Application.Quit();
+    }
 }
